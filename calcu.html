@@ -1,0 +1,50 @@
+<html>
+<title>CALCULATOR</title>
+<head><font color="red"><pre>                                                     <big><u>BASIC-CALCULATOR</u></big></pre></font></head>
+<body>
+<script>
+function myfunc1()
+{
+var a=document.getElementById('number').value;
+var b=document.getElementById('numbers').value;
+document.getElementById('result').innerHTML=(a*b);
+}
+function myfunc2()
+{
+var a=document.getElementById('number').value;
+var b=document.getElementById('numbers').value;
+document.getElementById('result').innerHTML=(a/b);
+}
+function myfunc3()
+{
+var a=document.getElementById('number').value;
+var b=document.getElementById('numbers').value;
+document.getElementById('result').innerHTML=(a-b);
+}
+function myfunc4()
+{
+var a=document.getElementById('number').value;
+var b=document.getElementById('numbers').value;
+document.getElementById('result').innerHTML=(+a + +b);
+}
+function myfunc5()
+{
+var a=document.getElementById('number').value;
+var b=document.getElementById('numbers').value;
+document.getElementById('result').innerHTML=(a**b);
+}
+</script>
+1st number:
+<input type="number" value=" "  id="number"><br><br>
+2nd number:
+<input type="number" value=" "  id="numbers"><br><br>
+<input type="submit" value="Multiply" onclick="return myfunc1()">
+<input type="submit" value="Divide" onclick="return myfunc2()">
+<input type="submit" value="Subtract" onclick="return myfunc3()">
+<input type="submit" value="Add" onclick="return myfunc4()">
+<input type="submit" value="power" onclick="return myfunc5()">
+
+<b> The result is:</b><br><br>
+<span id="result"></span>
+</body>
+</html>
